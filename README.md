@@ -3,7 +3,7 @@
 [![Kicad_Libs](https://img.shields.io/badge/Kicad_Libs-29C7FF)](https://github.com/git4dcc/RTB_SamacSys)
 [![Apache License 2.0](https://img.shields.io/badge/license-Apache%20License%202.0-lightgray)](https://www.apache.org/licenses/LICENSE-2.0)
 
-This E15 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E15 may be cascaded with regular WS28xx chips. The number of LEDs can be auto configured (0-12). The common LED voltage is fixed to 5V.
+This E15 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E15 may be cascaded with regular WS28xx chips. The number of LEDs can be auto configured (0-12). The common LED voltage is fixed to 5V.   (see also [E10](https://github.com/git4dcc/RTB_E10), [E13](https://github.com/git4dcc/RTB_E13))
 
 ```
 Byte order:     {led_0} ... {led_N}
@@ -21,7 +21,10 @@ The decoder has the following features,
 
 [more](https://rtb4dcc.de/hardware/modules/e15/)
 
-# PCB
+# Hardware
+My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflow soldering is my recommendation, but with some experience handsoldering is also possible.
+
+## PCB
 <img src="https://rtb4dcc.de/wp-content/uploads/2024/04/E15_1-768x410.png" width=500>
 
 - 2-layer PCB, FR4, 1.6mm
@@ -32,7 +35,7 @@ The decoder has the following features,
 
 [Schematic](doc/E15_schematic.pdf) | [Layout](doc/E15_layout.pdf)
 
-# Firmware
+## Firmware
 Filename structure: { **pcb** }{ **code** }{ **version** }.hex
 
 Example: **E15F0001**.hex
@@ -42,3 +45,8 @@ Example: **E15F0001**.hex
 | **pcb** | Name of matching hardware (**E15**) |
 | **code** | Type of code contained (**R**=rom, **B**=bootloader, **F**=flash, **U**=bld update, **P**=UPDI factory code) |
 | **version** | Release version (**####**) |
+
+# Pictures
+<img src=https://rtb4dcc.de/wp-content/uploads/2024/02/E13_3.jpg width=260>
+
+This project is intended for hobby use only and is distributed in accordance with the Apache License 2.0 agreement.
