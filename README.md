@@ -3,7 +3,7 @@
 [![Kicad_Libs](https://img.shields.io/badge/Kicad_Libs-29C7FF)](https://github.com/git4dcc/RTB_SamacSys)
 [![Apache License 2.0](https://img.shields.io/badge/license-Apache%20License%202.0-lightgray)](https://www.apache.org/licenses/LICENSE-2.0)
 
-This E15 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E15 may be cascaded with regular WS28xx chips. The number of LEDs attached is automatically detected (0-12). The LED voltage is fixed to 5V as opposed to [E13](https://github.com/git4dcc/RTB_E13), which allows for variable LED voltage.  (see also [E10](https://github.com/git4dcc/RTB_E10), [E13](https://github.com/git4dcc/RTB_E13))
+This E15 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E15 may be cascaded with regular WS28xx chips. The number of LEDs attached is automatically detected (0-12). The LED voltage is fixed to 5V.  (see also [E10](https://github.com/git4dcc/RTB_E10), [E13](https://github.com/git4dcc/RTB_E13))
 
 - [User Guide - DE](https://rtb4dcc.de/ws2811_guide_de/)<br>
 - User Guide - EN
@@ -17,6 +17,7 @@ The decoder has the following features,
   - 0..12 LEDs (auto detecting)
   - Charlieplexing (Multiplexing) output
   - 256 step PWM (300Hz)
+  - LED voltage fixed to 5V (see also [E13](https://github.com/git4dcc/RTB_E13))
   - gamma correction (optional)
 - firmware update via V24 debug interface
 
