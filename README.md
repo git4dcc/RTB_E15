@@ -46,7 +46,7 @@ Example: **E15F0001**.hex
 | **version** | Release version (**####**) |
 
 ## UPDI
-The fuse settings as well as the P-code (E13Pxxxx.hex) has to be installed by using UPDI.<br>
+The fuse settings as well as the P-code (E15Pxxxx.hex) has to be installed by using UPDI.<br>
 
 <img src=https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_4.jpg>
 
@@ -59,7 +59,7 @@ Subsequent code updates can be done via the built-in serial debug interface.<br>
 
 - connect the serial cable (1Mb, 8N1, RTS/CTS)
 - press 'break' within the VT100 terminal to bump the module to console prompt
-- upload the firmware file (E13Fxxxx.hex)
+- upload the firmware file (E15Fxxxx.hex)
 - for more details, refer to the 'User Guide'
 
 <img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_Rom.png" width=500>
