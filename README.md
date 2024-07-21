@@ -53,7 +53,7 @@ The fuse settings as well as the P-code (E15Pxxxx.hex) has to be installed by us
 
 | Fuse Setting | P-code Install |
 | --- | --- |
-|<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_Fuses.png" width=500>|<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_Mem.png" width=500>|
+|<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E15_Fuses.png" width=500>|<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E15_Mem.png" width=500>|
 
 ## Debug Interface
 Subsequent code updates can be done via the built-in serial debug interface.<br>
@@ -63,7 +63,7 @@ Subsequent code updates can be done via the built-in serial debug interface.<br>
 - upload the firmware file (E15Fxxxx.hex)
 - for more details, refer to the 'User Guide'
 
-<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_Rom.png" width=500>
+<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E15_Rom.png" width=500>
 
 # Software
 The LED intensity values for the individual LEDs need to be transmitted over the bus, with N being the number of configured LEDs.
