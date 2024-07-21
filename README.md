@@ -66,7 +66,7 @@ Subsequent code updates can be done via the built-in serial debug interface.<br>
 <img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_Rom.png" width=500>
 
 # Software
-Depending on the number of LEDs connected, the LED intensity values for the individual LEDs must be transmitted over the bus,
+The LED intensity values for the individual LEDs need to be transmitted over the bus, with N being the number of configured LEDs.
 
 ```
 Byte order:     {led_0} ... {led_N}
