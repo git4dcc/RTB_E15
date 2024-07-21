@@ -16,6 +16,7 @@
     (rev 1)
     (company "Frank Schumacher")
     (comment 1 "WS2811 chip emulator for 12 multiplex LEDs (fixed voltage)")
+    (comment 4 "Licensed under the Apache License, Version 2")
   )
 
   (layers
@@ -70,8 +71,7 @@
     (mod_text_width 0.15)
     (pad_size 1 0.5)
     (pad_drill 0)
-    (pad_to_mask_clearance 0.051)
-    (solder_mask_min_width 0.1)
+    (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
@@ -1213,7 +1213,7 @@
   (gr_text "FS 2023" (at 102.53 89.06) (layer B.Cu) (tstamp 6540E57F)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (gr_text E15.0 (at 101.49 89.04) (layer F.Cu)
+  (gr_text E15.1 (at 101.49 89.04) (layer F.Cu)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text +5V (at 91.57 86.41 270) (layer F.SilkS) (tstamp 60684BBF)
