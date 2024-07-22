@@ -7,10 +7,9 @@
 
 This E15 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E15 may be cascaded with regular WS28xx chips. The number of LEDs attached is automatically detected (0-12). The LED voltage is fixed to 5V.  The intended use is to drive Multiplex Signals on Model Railway layouts via the WS28xx bus.
 
-_Note: The E15 is nearly identical to the [E13](https://github.com/git4dcc/RTB_E13), but allows for fixed LED voltage only._
-
-- [User Guide - DE](https://rtb4dcc.de/ws2811_guide_de/)<br>
-- User Guide - EN
+> [!NOTE]
+> [User Guide - DE](https://rtb4dcc.de/ws2811_guide_de/)<br>
+> User Guide - EN
 
 <img src="https://rtb4dcc.de/wp-content/uploads/2024/04/E15_1.png">
 
