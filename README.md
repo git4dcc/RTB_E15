@@ -6,9 +6,17 @@
 This E15 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E15 may be cascaded with regular WS28xx chips. The number of LEDs attached is automatically detected (0-12). The LED voltage is fixed to 5V.  The intended use is to drive Multiplex Signals on Model Railway layouts via the WS28xx bus.
 
 <details>
+<summary>See also</summary>
+
+- [RTB_E10](https://github.com/git4dcc/RTB_E10)
+- [RTB_E13](https://github.com/git4dcc/RTB_E13)
+
+</details>
+
+<details>
 <summary>User Guides</summary>
 
-  - [User Guide - DE](https://rtb4dcc.de/ws2811_guide_de/)
+- [User Guide - DE](https://rtb4dcc.de/ws2811_guide_de/)
 - User Guide - EN
 
 </details>
@@ -22,7 +30,7 @@ The decoder has the following features,
   - 0..12 LEDs (auto detecting)
   - Charlieplexing (Multiplexing) output
   - 256 step PWM (300Hz)
-  - LED voltage fixed to 5V (see also [E13](https://github.com/git4dcc/RTB_E13))
+  - LED voltage fixed to 5V (see also [RTB_E13](https://github.com/git4dcc/RTB_E13))
   - gamma correction (optional)
 - firmware update via V24 debug interface
 
@@ -40,8 +48,12 @@ My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflo
 ## Kicad
 [Schematic](doc/E15_schematic.pdf) | [Layout](doc/E15_layout.pdf) | [Gerber](gerber)
 
-> [!NOTE]
-> Requires my Kicad project library [RTB_SamacSys](https://github.com/git4dcc/RTB_SamacSys) in the same directory tree.
+<details>
+<summary>Dependency</summary>
+
+Requires my Kicad project library [RTB_SamacSys](https://github.com/git4dcc/RTB_SamacSys) in the same directory tree.
+
+</details>
 
 ## Firmware
 Filename structure: { **pcb** }{ **code** }{ **version** }.hex
