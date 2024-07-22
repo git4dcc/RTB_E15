@@ -5,6 +5,8 @@
 
 This E15 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E15 may be cascaded with regular WS28xx chips. The number of LEDs attached is automatically detected (0-12). The LED voltage is fixed to 5V.  The intended use is to drive Multiplex Signals on Model Railway layouts via the WS28xx bus.
 
+_Note: The E15 is nearly identical to the [RTB_E13](https://github.com/git4dcc/RTB_E13), but allows fixed LED voltage._
+
 <details>
 <summary>See also</summary>
 
@@ -69,14 +71,22 @@ Example: **E15F0001**.hex
 ## UPDI
 The fuse settings as well as the P-code (E15Pxxxx.hex) has to be installed by using UPDI.<br>
 
+<details>
+<summary>Details</summary>
+
 <img src=https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_4.jpg>
 
 | Fuse Setting | P-code Install |
 | --- | --- |
 |<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E15_Fuses.png" width=500>|<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E15_Mem.png" width=500>|
 
+</details>
+
 ## Debug Interface
 Subsequent code updates can be done via the built-in serial debug interface.<br>
+
+<details>
+<summary>Details</summary>
 
 - connect the serial cable (1Mb, 8N1, RTS/CTS)
 - press 'break' within the VT100 terminal to bump the module to console prompt
@@ -84,6 +94,8 @@ Subsequent code updates can be done via the built-in serial debug interface.<br>
 - for more details, refer to the 'User Guide'
 
 <img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E15_Rom.png" width=500>
+
+</details>
 
 # Software
 The LED intensity values for the individual LEDs need to be transmitted over the bus, with N being the number of configured LEDs.
