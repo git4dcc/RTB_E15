@@ -3,13 +3,15 @@
 [![Kicad_Libs](https://img.shields.io/badge/Kicad_Libs-29C7FF)](https://github.com/git4dcc/RTB_SamacSys)
 [![Apache License 2.0](https://img.shields.io/badge/license-Apache%20License%202.0-lightgray)](https://www.apache.org/licenses/LICENSE-2.0)
 
-(see also [E10](https://github.com/git4dcc/RTB_E10), [E13](https://github.com/git4dcc/RTB_E13))
-
 This E15 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E15 may be cascaded with regular WS28xx chips. The number of LEDs attached is automatically detected (0-12). The LED voltage is fixed to 5V.  The intended use is to drive Multiplex Signals on Model Railway layouts via the WS28xx bus.
 
-> [!NOTE]
-> [User Guide - DE](https://rtb4dcc.de/ws2811_guide_de/)<br>
-> User Guide - EN
+<details>
+<summary>User Guides</summary>
+
+  - [User Guide - DE](https://rtb4dcc.de/ws2811_guide_de/)
+- User Guide - EN
+
+</details>
 
 <img src="https://rtb4dcc.de/wp-content/uploads/2024/04/E15_1.png">
 
@@ -38,8 +40,8 @@ My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflo
 ## Kicad
 [Schematic](doc/E15_schematic.pdf) | [Layout](doc/E15_layout.pdf) | [Gerber](gerber)
 
-> [!IMPORTANT]
-> Requires my Kicad project library [RTB_SamacSys](https://github.com/git4dcc/RTB_SamacSys)
+> [!NOTE]
+> Requires my Kicad project library [RTB_SamacSys](https://github.com/git4dcc/RTB_SamacSys) in the same directory tree.
 
 ## Firmware
 Filename structure: { **pcb** }{ **code** }{ **version** }.hex
@@ -78,7 +80,7 @@ The LED intensity values for the individual LEDs need to be transmitted over the
 Byte order:     {led_0} ... {led_N}
 ```
 
-# Pictures
+# Images
 <img src=https://rtb4dcc.de/wp-content/uploads/2024/02/E13_3.jpg width=260>
 
 This project is intended for hobby use only and is distributed in accordance with the Apache License 2.0 agreement.
