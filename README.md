@@ -36,9 +36,10 @@ My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflo
 - LED: Charlieplexing
 
 ## Kicad
-:yellow_circle: Dependency: Requires my Kicad project library [RTB_SamacSys](https://github.com/git4dcc/RTB_SamacSys)
-
 [Schematic](doc/E15_schematic.pdf) | [Layout](doc/E15_layout.pdf) | [Gerber](gerber)
+
+> [!IMPORTANT]
+> Requires my Kicad project library [RTB_SamacSys](https://github.com/git4dcc/RTB_SamacSys)
 
 ## Firmware
 Filename structure: { **pcb** }{ **code** }{ **version** }.hex
