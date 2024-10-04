@@ -23,7 +23,7 @@ _Note: The E15 is nearly identical to the [RTB_E13](https://github.com/git4dcc/R
 
 </details>
 
-<img src="https://rtb4dcc.de/wp-content/uploads/2024/04/E15_1.png">
+<img src=supplemental/images/E15_main.jpg>
 
 The decoder has the following features,
 - **Protocol**
@@ -39,7 +39,7 @@ The decoder has the following features,
 # Hardware
 My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflow soldering is my recommendation, but with some experience handsoldering is also possible.
 
-<img src=https://rtb4dcc.de/wp-content/uploads/2024/07/un_E15_5.png>
+<img src=supplemental/images/E15_top_connect.jpg>
 
 ## PCB
 - 2-layer PCB, FR4, 1.6mm
@@ -75,11 +75,11 @@ The fuse settings as well as the P-code (E15Pxxxx.hex) has to be installed by us
 <details>
 <summary>Details</summary>
 
-<img src=https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_4.jpg>
+<img src=supplemental/images/E15_updi.jpg>
 
 | Fuse Setting | P-code Install |
 | --- | --- |
-|<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E15_Fuses.png" width=500>|<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E15_Mem.png" width=500>|
+|<img src=supplemental/images/E15_updi_fuses.jpg width=500>|<img src=supplemental/images/E15_updi_memory.jpg width=500>|
 
 </details>
 
@@ -94,7 +94,7 @@ Subsequent code updates can be done via the built-in serial debug interface.<br>
 - upload the firmware file (E15Fxxxx.hex)
 - for more details, refer to the 'User Guide'
 
-  <img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E15_Rom.png">
+  <img src=supplemental/images/E15_debugIF.jpg>
 
 </details>
 
@@ -106,6 +106,6 @@ Byte order:     {led_0} ... {led_N}
 ```
 
 # Images
-<img src=https://rtb4dcc.de/wp-content/uploads/2024/02/E13_3.jpg width=260> <img src=https://rtb4dcc.de/wp-content/uploads/2024/01/un_E13_example1.png width=260>
+<img src=supplemental/images/E15_samples.jpg width=260> <img src=supplemental/images/E15_usecase.jpg width=260>
 
 This project is intended for hobby use only and is distributed in accordance with the Apache License 2.0 agreement.
