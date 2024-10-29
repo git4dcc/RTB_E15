@@ -28,3 +28,4 @@ Change log:
 
 	Feb/19/2024 - initial version
 	Feb/23/2024 - added 'E' eeprom description
+	Oct/29/2024 - fixed sticky LEDs after auto detect
