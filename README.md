@@ -48,7 +48,7 @@ My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflo
 - LED: Charlieplexing
 
 ## Kicad
-[Schematic](doc/E15_schematic.pdf) | [Layout](doc/E15_layout.pdf) | [Gerber](gerber)
+[Schematic](doc/E15_schematic.pdf) | [Layout](doc/E15_layout.pdf) | [BOM](doc/E15_BOM.pdf) | [Gerber](gerber)
 
 <details>
 <summary>Dependency</summary>
