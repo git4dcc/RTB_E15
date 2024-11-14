@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "RTB E15 module"
-Date "2024-10-07"
+Date "2024-11-14"
 Rev "1"
 Comp "Frank Schumacher"
 Comment1 "WS2811 chip emulator for 12 multiplex LEDs (fixed voltage)"
@@ -179,7 +179,7 @@ F 3 "~" H 5050 2650 50  0001 C CNN
 	1    5050 2650
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5200 2650 2    50   Input ~ 0
+Text GLabel 5300 2650 2    50   Input ~ 0
 DI
 $Comp
 L Device:R R19
@@ -192,7 +192,7 @@ F 3 "~" H 5050 2750 50  0001 C CNN
 	1    5050 2750
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5200 2750 2    50   Input ~ 0
+Text GLabel 5300 2750 2    50   Input ~ 0
 DO
 Text GLabel 3000 1850 0    50   Input ~ 0
 V24.rts
@@ -220,12 +220,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0118
 U 1 1 6072C827
-P 1750 5000
-F 0 "#PWR0118" H 1750 4850 50  0001 C CNN
-F 1 "+5V" H 1765 5173 50  0000 C CNN
-F 2 "" H 1750 5000 50  0001 C CNN
-F 3 "" H 1750 5000 50  0001 C CNN
-	1    1750 5000
+P 1800 5200
+F 0 "#PWR0118" H 1800 5050 50  0001 C CNN
+F 1 "+5V" H 1815 5373 50  0000 C CNN
+F 2 "" H 1800 5200 50  0001 C CNN
+F 3 "" H 1800 5200 50  0001 C CNN
+	1    1800 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -253,12 +253,12 @@ $EndComp
 $Comp
 L power:VDD #PWR0102
 U 1 1 606FD673
-P 3000 5000
-F 0 "#PWR0102" H 3000 4850 50  0001 C CNN
-F 1 "VDD" H 3017 5173 50  0000 C CNN
-F 2 "" H 3000 5000 50  0001 C CNN
-F 3 "" H 3000 5000 50  0001 C CNN
-	1    3000 5000
+P 3050 5200
+F 0 "#PWR0102" H 3050 5050 50  0001 C CNN
+F 1 "VDD" H 3067 5373 50  0000 C CNN
+F 2 "" H 3050 5200 50  0001 C CNN
+F 3 "" H 3050 5200 50  0001 C CNN
+	1    3050 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -372,23 +372,23 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 60670943
-P 2700 7450
-F 0 "H4" H 2800 7496 50  0000 L CNN
-F 1 "MountingHole" H 2800 7405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 2700 7450 50  0001 C CNN
-F 3 "~" H 2700 7450 50  0001 C CNN
-	1    2700 7450
+P 3600 7450
+F 0 "H4" H 3700 7496 50  0000 L CNN
+F 1 "MountingHole" H 3700 7405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 3600 7450 50  0001 C CNN
+F 3 "~" H 3600 7450 50  0001 C CNN
+	1    3600 7450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 65435EAC
-P 3600 7450
-F 0 "H3" H 3700 7496 50  0000 L CNN
-F 1 "MountingHole" H 3700 7405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 3600 7450 50  0001 C CNN
-F 3 "~" H 3600 7450 50  0001 C CNN
-	1    3600 7450
+P 2750 7450
+F 0 "H3" H 2850 7496 50  0000 L CNN
+F 1 "MountingHole" H 2850 7405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 2750 7450 50  0001 C CNN
+F 3 "~" H 2750 7450 50  0001 C CNN
+	1    2750 7450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -443,9 +443,9 @@ Wire Notes Line
 	1050 7050 3800 7050
 Wire Notes Line
 	3800 7050 3800 4100
-Text Notes 1100 4300 0    79   ~ 0
+Text Notes 1150 4300 0    79   ~ 16
 Power
-Text Notes 4500 4250 0    79   ~ 0
+Text Notes 4500 4250 0    79   ~ 16
 Interfaces
 Wire Notes Line
 	1050 3850 6600 3850
@@ -455,10 +455,10 @@ Wire Notes Line
 	6600 700  1050 700 
 Wire Notes Line
 	1050 700  1050 3850
-Text Notes 1150 900  0    79   ~ 0
+Text Notes 1150 900  0    79   ~ 16
 CPU
-Text Notes 7850 900  0    79   ~ 0
-Muliplex Signal connector
+Text Notes 7850 900  0    79   ~ 16
+Multiplex Signal connector
 NoConn ~ 3300 2250
 Wire Wire Line
 	2050 1050 2050 1400
@@ -466,23 +466,23 @@ NoConn ~ 3300 2150
 $Comp
 L power:GND #PWR0106
 U 1 1 65698D2B
-P 2400 6200
-F 0 "#PWR0106" H 2400 5950 50  0001 C CNN
-F 1 "GND" H 2405 6027 50  0000 C CNN
-F 2 "" H 2400 6200 50  0001 C CNN
-F 3 "" H 2400 6200 50  0001 C CNN
-	1    2400 6200
+P 2450 6400
+F 0 "#PWR0106" H 2450 6150 50  0001 C CNN
+F 1 "GND" H 2455 6227 50  0000 C CNN
+F 2 "" H 2450 6400 50  0001 C CNN
+F 3 "" H 2450 6400 50  0001 C CNN
+	1    2450 6400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
 U 1 1 656982B2
-P 1750 5850
-F 0 "C1" H 1800 5750 50  0000 L CNN
-F 1 "4.7u/10V" H 1800 5650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1788 5700 50  0001 C CNN
-F 3 "~" H 1750 5850 50  0001 C CNN
-	1    1750 5850
+P 1800 6050
+F 0 "C1" H 1850 5950 50  0000 L CNN
+F 1 "4.7u/10V" H 1850 5850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1838 5900 50  0001 C CNN
+F 3 "~" H 1800 6050 50  0001 C CNN
+	1    1800 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -497,90 +497,90 @@ NoConn ~ 4500 1950
 NoConn ~ 4500 1850
 NoConn ~ 4500 1750
 NoConn ~ 4500 1650
-Text GLabel 8900 2500 0    50   Input ~ 0
+Text GLabel 8900 2950 0    50   Input ~ 0
 OUT4
-Text GLabel 8900 2400 0    50   Input ~ 0
+Text GLabel 8900 2850 0    50   Input ~ 0
 OUT3
-Text GLabel 8900 2300 0    50   Input ~ 0
+Text GLabel 8900 2750 0    50   Input ~ 0
 OUT2
-Text GLabel 8900 2200 0    50   Input ~ 0
+Text GLabel 8900 2650 0    50   Input ~ 0
 OUT1
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 658F13E6
-P 9100 2300
-F 0 "J1" H 9350 2350 50  0000 R CNN
-F 1 "MPX output" H 9700 2250 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x02_P2.00mm_Vertical" H 9100 2300 50  0001 C CNN
-F 3 "~" H 9100 2300 50  0001 C CNN
-	1    9100 2300
+P 9100 2750
+F 0 "J1" H 9350 2750 50  0000 R CNN
+F 1 "MPX output" H 9700 2650 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x02_P2.00mm_Vertical" H 9100 2750 50  0001 C CNN
+F 3 "~" H 9100 2750 50  0001 C CNN
+	1    9100 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Regulator_Linear:MIC5205-5.0YM5 U2
 U 1 1 65909D8D
-P 2400 5700
-F 0 "U2" H 2400 6042 50  0000 C CNN
-F 1 "MIC5205-5.0YM5" H 2400 5951 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2400 6025 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005785A.pdf" H 2400 5700 50  0001 C CNN
-	1    2400 5700
+P 2450 5900
+F 0 "U2" H 2450 6242 50  0000 C CNN
+F 1 "MIC5205-5.0YM5" H 2450 6151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2450 6225 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005785A.pdf" H 2450 5900 50  0001 C CNN
+	1    2450 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 5600 1950 5600
+	2150 5800 2000 5800
 Wire Wire Line
-	1750 5600 1750 5700
+	1800 5800 1800 5900
 Wire Wire Line
-	1750 6000 1750 6100
+	1800 6200 1800 6300
 Wire Wire Line
-	1750 6100 2400 6100
+	1800 6300 2450 6300
 Wire Wire Line
-	2400 6000 2400 6100
-Connection ~ 2400 6100
+	2450 6200 2450 6300
+Connection ~ 2450 6300
 Wire Wire Line
-	2400 6100 3000 6100
+	2450 6300 3050 6300
 Wire Wire Line
-	2700 5600 3000 5600
+	2750 5800 3050 5800
 Wire Wire Line
-	3000 5600 3000 5700
+	3050 5800 3050 5900
 Wire Wire Line
-	3000 6000 3000 6100
-Connection ~ 1750 5600
+	3050 6200 3050 6300
+Connection ~ 1800 5800
 Wire Wire Line
-	2100 5700 1950 5700
+	2150 5900 2000 5900
 Wire Wire Line
-	1950 5700 1950 5600
-Connection ~ 1950 5600
+	2000 5900 2000 5800
+Connection ~ 2000 5800
 Wire Wire Line
-	1950 5600 1750 5600
+	2000 5800 1800 5800
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 65922BEA
-P 2400 5150
-F 0 "JP1" H 2400 5355 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2400 5264 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2400 5150 50  0001 C CNN
-F 3 "~" H 2400 5150 50  0001 C CNN
-	1    2400 5150
+P 2450 5350
+F 0 "JP1" H 2450 5555 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 2450 5464 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 5350 50  0001 C CNN
+F 3 "~" H 2450 5350 50  0001 C CNN
+	1    2450 5350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 5000 1750 5150
+	1800 5200 1800 5350
 Wire Wire Line
-	3000 5000 3000 5150
-Connection ~ 3000 5600
+	3050 5200 3050 5350
+Connection ~ 3050 5800
 Wire Wire Line
-	2550 5150 3000 5150
-Connection ~ 3000 5150
+	2600 5350 3050 5350
+Connection ~ 3050 5350
 Wire Wire Line
-	3000 5150 3000 5600
+	3050 5350 3050 5800
 Wire Wire Line
-	2250 5150 1750 5150
-Connection ~ 1750 5150
+	2300 5350 1800 5350
+Connection ~ 1800 5350
 Wire Wire Line
-	1750 5150 1750 5600
-NoConn ~ 2700 5700
+	1800 5350 1800 5800
+NoConn ~ 2750 5900
 Text Notes 1600 1900 0    50   ~ 0
 Hbt (grn)
 Wire Wire Line
@@ -674,38 +674,50 @@ Wire Wire Line
 $Comp
 L Diode:1N4001 D1
 U 1 1 6594502C
-P 1500 5850
-F 0 "D1" V 1600 5700 50  0000 L CNN
-F 1 "SSA33L" V 1400 5550 50  0001 L CNN
-F 2 "Diode_SMD:D_SMA" H 1500 5675 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1500 5850 50  0001 C CNN
-	1    1500 5850
+P 1550 6050
+F 0 "D1" V 1650 5900 50  0000 L CNN
+F 1 "SSA33L" V 1750 5750 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 1550 5875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1550 6050 50  0001 C CNN
+	1    1550 6050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1750 6100 1500 6100
+	1800 6300 1550 6300
 Wire Wire Line
-	1500 6100 1500 6000
-Connection ~ 1750 6100
+	1550 6300 1550 6200
+Connection ~ 1800 6300
 Wire Wire Line
-	1500 5700 1500 5600
+	1550 5900 1550 5800
 Wire Wire Line
-	1500 5600 1750 5600
-Text Notes 1250 5900 0    50   ~ 0
+	1550 5800 1800 5800
+Text Notes 1350 5950 0    50   ~ 0
 n.f.
 Wire Wire Line
-	2400 6100 2400 6200
+	2450 6300 2450 6400
 Wire Wire Line
 	4750 1350 4750 1450
 $Comp
 L Device:C C4
 U 1 1 6591D86E
-P 3000 5850
-F 0 "C4" H 3050 5750 50  0000 L CNN
-F 1 "4.7u/10V" H 3050 5650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 5700 50  0001 C CNN
-F 3 "~" H 3000 5850 50  0001 C CNN
-	1    3000 5850
+P 3050 6050
+F 0 "C4" H 3100 5950 50  0000 L CNN
+F 1 "4.7u/10V" H 3100 5850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3088 5900 50  0001 C CNN
+F 3 "~" H 3050 6050 50  0001 C CNN
+	1    3050 6050
 	1    0    0    -1  
 $EndComp
+Text Notes 1750 4400 0    50   Italic 0
+LDO is optional and only to protect CPU against\nhigh voltage on the bus. The D1 protects against\nreverse polarity. Close JP1 if LDO is not fitted.
+Text Notes 8650 3200 0    50   ~ 0
+2x2 pin header
+Text Notes 8650 2100 0    50   ~ 0
+1x4 terminal connector (optional)
+Text Notes 1550 2250 0    50   ~ 0
+Note: R20 depends on LED
+Wire Wire Line
+	5200 2650 5300 2650
+Wire Wire Line
+	5200 2750 5300 2750
 $EndSCHEMATC

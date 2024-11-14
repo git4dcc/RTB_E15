@@ -1,0 +1,22 @@
+Tested multiplex signals
+========================
+
+ADC capture:
+Viessmann 4750: 31 4c 33 72 5d 7f 33 31 4b 49 70 6e
+Viessmann 4753: 31 48 32 31 44 45 33 33 48 48 6d 6e
+
+LED colors:
+Viessmann 4750: rd gn yl -- -- -- yl yl gn gn -- --
+Viessmann 4753: rd gn yl rd wt wt yl yl gn gn -- --
+
+LED count(dec):
+Viessmann 4750: 7
+Viessmann 4753: 10
+
+LED mask(hex):
+Viessmann 4750: 03c7
+Viessmann 4753: 03ff
+
+LED mask(bin):
+Viessmann 4750: 1110 0011 1100 0000
+Viessmann 4753: 1111 1111 1100 0000
