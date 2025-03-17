@@ -1,0 +1,42 @@
+; =========================================
+; Should, for whatever reason, auto detect
+; misconfigure any of the multiplex devices
+; the proper configuration can be forced
+; within the EEPROM of the E15 module.
+;
+; Simply copy/paste the 5-lines between the
+; seperators into the debug console of the
+; E15 module.
+; =========================================
+
+; ************[Viessmann 4040]************* 
+@ba15 ; Affinity [E15] 
+@bb03 ; MemBank  [EEP] 
+@bc03 ; Command  [WRT]
+:1000000004FF0E047F4933467F7F7F7F7F7F467FDB
+:00000001FF
+; ***************************************** 
+
+; ************[Viessmann 4042]************* 
+@ba15 ; Affinity [E15] 
+@bb03 ; MemBank  [EEP] 
+@bc03 ; Command  [WRT]
+:1000000003FF0308314C7F7F7F7F7F7F7F7F7F48A7
+:00000001FF
+; ***************************************** 
+
+; ************[Viessmann 4044]************* 
+@ba15 ; Affinity [E15] 
+@bb03 ; MemBank  [EEP] 
+@bc03 ; Command  [WRT]
+:1000000005FF330830497F7F46467F7F7F7F7F48EB
+:00000001FF
+; ***************************************** 
+
+; ************[Viessmann 4045]************* 
+@ba15 ; Affinity [E15] 
+@bb03 ; MemBank  [EEP] 
+@bc03 ; Command  [WRT]
+:1000000006FF0F0C304A32467F7F7F7F7F7F334869
+:00000001FF
+; ***************************************** 
