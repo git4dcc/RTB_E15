@@ -1,13 +1,10 @@
-; =========================================
-; Should, for whatever reason, auto detect
-; misconfigure any of the multiplex devices
-; the proper configuration can be forced
-; within the EEPROM of the E15 module.
+; ==================================================================================
+; A multiplex signal can also pre-configured by using a config file without the
+; need being connected to the PCB at the time of configuration.
 ;
-; Simply copy/paste the 5-lines between the
-; seperators into the debug console of the
-; E15 module.
-; =========================================
+; Simply copy/paste the 5-lines between the seperators into the debug console
+; of the E15 module.
+; ==================================================================================
 
 ; ************[Viessmann 4040]************* 
 @ba15 ; Affinity [E15] 
@@ -38,5 +35,13 @@
 @bb03 ; MemBank  [EEP] 
 @bc03 ; Command  [WRT]
 :1000000006FF0F0C304A32467F7F7F7F7F7F334869
+:00000001FF
+; ***************************************** 
+
+; ************[Viessmann 4046]************* 
+@ba15 ; Affinity [E15] 
+@bb03 ; MemBank  [EEP] 
+@bc03 ; Command  [WRT]
+:1000000008FF3F0C354D364A4A4A7F7F7F7F364D89
 :00000001FF
 ; ***************************************** 
