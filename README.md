@@ -5,13 +5,13 @@
 
 This E15 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E15 may be cascaded with regular WS28xx chips. The number of LEDs attached is automatically detected (0-12). The LED voltage is fixed to 5V.  The intended use is to drive Multiplex Signals on Model Railway layouts via the WS28xx bus.
 
-_Note: The E15 is nearly identical to the [RTB_E13](https://github.com/git4dcc/RTB_E13), but only allows fixed LED voltage._
+_Note: The E15 is nearly identical to the [RTB_E13](/../../../../git4dcc/RTB_E13), but only allows fixed LED voltage._
 
 <details>
 <summary>See also</summary>
 
-- [RTB_E10](https://github.com/git4dcc/RTB_E10)
-- [RTB_E13](https://github.com/git4dcc/RTB_E13)
+- [RTB_E10](/../../../../git4dcc/RTB_E10)
+- [RTB_E13](/../../../../git4dcc/RTB_E13)
 
 </details>
 
@@ -54,7 +54,7 @@ My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflo
 <summary>Dependency</summary>
 <br>
 
-:yellow_circle: Requires my Kicad project library [RTB_SamacSys](https://github.com/git4dcc/RTB_SamacSys) in the same directory tree.
+:yellow_circle: Requires my Kicad project library [RTB_SamacSys](/../../../../git4dcc/RTB_SamacSys) in the same directory tree.
 
 </details>
 
